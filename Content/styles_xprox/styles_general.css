@@ -1,0 +1,29 @@
+﻿.container-body {
+    margin-top: 50px;
+}
+
+.navGeneral {
+    background-color: #337AB7 !important;
+}
+
+.navbar-brand{
+    font-weight:bold;
+}
+
+.nav-link {
+    margin-right:20px;
+    color: white;
+}
+
+.input-grow:focus {
+    max-width: 400px;
+}
+
+.nav-icon {
+    margin-right: 20px;
+    color: white;
+}
+
+.nav-icon:hover{
+    cursor:pointer;
+}

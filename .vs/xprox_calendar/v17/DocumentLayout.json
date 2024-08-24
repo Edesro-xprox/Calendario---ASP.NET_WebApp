@@ -3,19 +3,23 @@
   "WorkspaceRootPath": "C:\\Users\\Lenovo\\Desktop\\proyectosEDS\\xprox_calendar\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E21730C6-CC8F-4ECD-BD29-707C7B527BD2}|xprox_calendar.csproj|c:\\users\\lenovo\\desktop\\proyectoseds\\xprox_calendar\\scripts\\calendar.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{E21730C6-CC8F-4ECD-BD29-707C7B527BD2}|xprox_calendar.csproj|solutionrelative:scripts\\calendar.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{E21730C6-CC8F-4ECD-BD29-707C7B527BD2}|xprox_calendar.csproj|c:\\users\\lenovo\\desktop\\proyectoseds\\xprox_calendar\\content\\styles_xprox\\styles_general.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E21730C6-CC8F-4ECD-BD29-707C7B527BD2}|xprox_calendar.csproj|solutionrelative:content\\styles_xprox\\styles_general.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E21730C6-CC8F-4ECD-BD29-707C7B527BD2}|xprox_calendar.csproj|c:\\users\\lenovo\\desktop\\proyectoseds\\xprox_calendar\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{E21730C6-CC8F-4ECD-BD29-707C7B527BD2}|xprox_calendar.csproj|C:\\Users\\Lenovo\\Desktop\\proyectosEDS\\xprox_calendar\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E21730C6-CC8F-4ECD-BD29-707C7B527BD2}|xprox_calendar.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E21730C6-CC8F-4ECD-BD29-707C7B527BD2}|xprox_calendar.csproj|c:\\users\\lenovo\\desktop\\proyectoseds\\xprox_calendar\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E21730C6-CC8F-4ECD-BD29-707C7B527BD2}|xprox_calendar.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E21730C6-CC8F-4ECD-BD29-707C7B527BD2}|xprox_calendar.csproj|C:\\Users\\Lenovo\\Desktop\\proyectosEDS\\xprox_calendar\\scripts\\calendar.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{E21730C6-CC8F-4ECD-BD29-707C7B527BD2}|xprox_calendar.csproj|solutionrelative:scripts\\calendar.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E21730C6-CC8F-4ECD-BD29-707C7B527BD2}|xprox_calendar.csproj|c:\\users\\lenovo\\desktop\\proyectoseds\\xprox_calendar\\scripts\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{E21730C6-CC8F-4ECD-BD29-707C7B527BD2}|xprox_calendar.csproj|c:\\users\\lenovo\\desktop\\proyectoseds\\xprox_calendar\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{E21730C6-CC8F-4ECD-BD29-707C7B527BD2}|xprox_calendar.csproj|solutionrelative:web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E21730C6-CC8F-4ECD-BD29-707C7B527BD2}|xprox_calendar.csproj|C:\\Users\\Lenovo\\Desktop\\proyectosEDS\\xprox_calendar\\scripts\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{E21730C6-CC8F-4ECD-BD29-707C7B527BD2}|xprox_calendar.csproj|solutionrelative:scripts\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
@@ -26,15 +30,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "styles_general.css",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\proyectosEDS\\xprox_calendar\\Content\\styles_xprox\\styles_general.css",
+              "RelativeDocumentMoniker": "Content\\styles_xprox\\styles_general.css",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\proyectosEDS\\xprox_calendar\\Content\\styles_xprox\\styles_general.css",
+              "RelativeToolTip": "Content\\styles_xprox\\styles_general.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-24T16:52:24.794Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\proyectosEDS\\xprox_calendar\\Web.config",
+              "RelativeDocumentMoniker": "Web.config",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\proyectosEDS\\xprox_calendar\\Web.config",
+              "RelativeToolTip": "Web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-08-12T05:12:09.035Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -44,7 +66,7 @@
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\proyectosEDS\\xprox_calendar\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB4AAAAKAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAABUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-05T03:42:22.626Z",
               "EditorCaption": ""
@@ -52,32 +74,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\proyectosEDS\\xprox_calendar\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\proyectosEDS\\xprox_calendar\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-05T02:26:41.993Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "calendar.js",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\proyectosEDS\\xprox_calendar\\Scripts\\calendar.js",
               "RelativeDocumentMoniker": "Scripts\\calendar.js",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\proyectosEDS\\xprox_calendar\\Scripts\\calendar.js",
               "RelativeToolTip": "Scripts\\calendar.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAUAAAA",
+              "ViewState": "AQIAAHYAAAAAAAAAAAAswKAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-08-05T02:18:17.852Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "main.js",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\proyectosEDS\\xprox_calendar\\Scripts\\main.js",
               "RelativeDocumentMoniker": "Scripts\\main.js",

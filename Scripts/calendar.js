@@ -6,6 +6,7 @@
         DevExpress.localization.locale('es');
         this.styles();
         this.devex();
+        this.events();
     }
     styles() {
         let css = document.createElement('style');
@@ -66,7 +67,7 @@
             .dxPopup({
                 title: 'Nuevo evento',
                 width: 600,
-                height:300,
+                height:400,
                 resizeEnabled: false,
                 contentTemplate: () => this.dx.frmCalendar.element(),
                 toolbarItems: [
@@ -80,7 +81,8 @@
                                 this.dx.mdlCalendar.hide();
                             }
                         },
-                        location: 'after'
+                        toolbar: "bottom",
+                        location:"after"
                     },
                     {
                         widget: 'dxButton',
@@ -92,7 +94,8 @@
 
                             }
                         },
-                        location: 'after'
+                        toolbar: "bottom",
+                        location: "after"
                     },
                 ]
             }).dxPopup('instance');
@@ -127,9 +130,23 @@
         this.dx.schdCalendar = $('<div>')
             .addClass('calendar')
             .dxScheduler({
-                dataSource: [],
-                views: ["day", "week", "month"],
-                currentView: "week",
+                dataSource: [
+                    {
+                        text: 'Helen1',
+                        startDate: new Date('2024-08-01T16:30:00.000Z'),
+                        endDate: new Date('2024-08-01T18:30:00.000Z'),
+                    },
+                    {
+                        text: 'Helen2',
+                        startDate: new Date('2024-08-10T16:30:00.000Z'),
+                        endDate: new Date('2024-08-11T18:30:00.000Z'),
+                    }
+                ],
+                views: [
+                    { type: "day", name:"Día"},
+                    { type: "month", name:"Mes"},
+                ],
+                currentView: "month",
                 currentDate: new Date(),
                 showAllDayPanel: true,
                 height: 600,
@@ -138,7 +155,7 @@
                     this.dx.tbarCalendar.option('items[0].text', tbarDate);
                 },
                 onAppointmentFormOpening: (e) => {
-                    e.cancel = true;
+                    e.cancel = true ;
                 }
             }).dxScheduler('instance');
 
@@ -150,7 +167,11 @@
 
         this.dx.schdCalendar.repaint();
     }
-
+    events() {
+        $('.dx-scheduler-date-table-cell').dblclick(() => {
+            this.dx.mdlCalendar.show();
+        });
+    }
     formatDate(date) {
         let dateFormat =  date.toLocaleDateString('es-ES', { month: 'long', weekday: 'long', day: '2-digit' });
         dateFormat = dateFormat.charAt(0).toUpperCase(0) + dateFormat.slice(1);
