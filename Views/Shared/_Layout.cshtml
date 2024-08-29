@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Mi aplicación de calendario</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/23.1.11/css/dx.light.css">
     @Styles.Render("~/Content/css")
@@ -26,8 +27,12 @@
                     @*<li>@Html.ActionLink("Contacto", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>*@
                 </ul>
                 <div class="input-group">
-                    <span class="input-group-text"><i class="fas fa-search"></i></span>
-                    <input type="text" class="form-control input-grow" placeholder="Buscar" />
+                    <div class="form-outline">
+                        <input id="search-input" type="search" class="form-control" placeholder="Buscar..." />
+                    </div>
+                    <button type="button" class="btn btn-secondary">
+                        <i class="fas fa-search"></i>
+                    </button>
                 </div>
                 <div>
                     <i class="fa fa-calendar fa-lg nav-icon" aria-hidden="true" title="Día"></i>
@@ -45,6 +50,7 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/23.1.11/js/dx.all.js"></script>
     <script src="https://cdn3.devexpress.com/jslib/23.1.11/js/localization/dx.messages.de.js"></script>
     <script type="module" src="~/Scripts/main.js"></script>

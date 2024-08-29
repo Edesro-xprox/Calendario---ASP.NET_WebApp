@@ -101,7 +101,7 @@
             }).dxPopup('instance');
 
         this.dx.tbarCalendar = $('<div>')
-            .addClass('mb-2')
+            .addClass('mb-2 card card-body')
             .dxToolbar({
                 items: [
                     {
@@ -128,7 +128,7 @@
             }).dxToolbar('instance');
 
         this.dx.schdCalendar = $('<div>')
-            .addClass('calendar')
+            .addClass('calendar card card-body')
             .dxScheduler({
                 dataSource: [
                     {
