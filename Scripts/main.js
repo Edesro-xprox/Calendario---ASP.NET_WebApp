@@ -9,5 +9,6 @@ $(document).ready(() => {
         $('.nav-icon').removeClass('fa-beat');
         $(e.target).removeClass('fa-beat');
     });
+
     new Calendar();
 });

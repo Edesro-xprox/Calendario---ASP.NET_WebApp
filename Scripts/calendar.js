@@ -4,9 +4,26 @@
     }
     init() {
         DevExpress.localization.locale('es');
+        this.getInitData();
         this.styles();
         this.devex();
         this.events();
+    }
+    getInitData() {
+        $.ajax({
+            url: '/Evento/executeProceduresEvent',
+            type: 'GET',
+            data: {
+                procedure: 'sps_event',
+                parameters: {}
+            },
+            success: (res) => {
+                alert(res);
+            },
+            error: (e) => {
+                alert("Data no cargada");
+            }
+        });
     }
     styles() {
         let css = document.createElement('style');
@@ -30,34 +47,42 @@
                 items: [
                     {
                         colSpan: 2,
+                        dataField: 'subject',
                         label: { text: 'Asunto'},
                         editorType: 'dxTextBox',
                         editorOptions: {
-
+                            maxLength: 100,
+                            placeholder: 'Escriba un evento...'
                         }
                     },
                     {
                         colSpan: 1,
+                        dataField: 'dateInit',
                         label: { text: 'Fecha inicio'},
                         editorType: 'dxDateBox',
                         editorOptions: {
-
+                            type: 'datetime',
+                            value: new Date()
                         }
                     },
                     {
                         colSpan: 1,
+                        dataField: 'dateEnd',
                         label: { text: 'Fecha fin'},
                         editorType: 'dxDateBox',
                         editorOptions: {
-
+                            type: 'datetime',
+                            value: new Date()
                         }
                     },
                     {
                         colSpan: 2,
+                        dataField: 'description',
                         label: { text: 'Descripción'},
                         editorType: 'dxTextArea',
                         editorOptions: {
-
+                            maxLength: 300,
+                            placeholder: 'Escriba una breve descripción...'
                         }
                     }
                 ]
@@ -91,7 +116,30 @@
                             icon: 'save',
                             type: 'success',
                             onClick: (e) => {
+                                debugger
+                                let valid = this.dx.frmCalendar.validate();
+                                if (valid.isValid) {
 
+                                    let data = this.dx.frmCalendar.option('formData');
+                                    data.dateInit = new Date(data.dateInit);
+                                    data.dateEnd = new Date(data.dateEnd);
+
+                                    $.ajax({
+                                        url: '/Evento/executeProceduresEvent',
+                                        type: 'POST',
+                                        contentType: 'application/json',
+                                        data: JSON.stringify({
+                                            procedure: 'spi_event',
+                                            parameters: data,
+                                        }),
+                                        success: (response) => {
+                                            alerta("Evento registrado");
+                                        },
+                                        error: (e) => {
+                                            alerta("Error en el servidor");
+                                        }
+                                    });
+                                }
                             }
                         },
                         toolbar: "bottom",
@@ -132,11 +180,13 @@
             .dxScheduler({
                 dataSource: [
                     {
+                        eventId: 1,
                         text: 'Helen1',
                         startDate: new Date('2024-08-01T16:30:00.000Z'),
                         endDate: new Date('2024-08-01T18:30:00.000Z'),
                     },
                     {
+                        eventId: 2,
                         text: 'Helen2',
                         startDate: new Date('2024-08-10T16:30:00.000Z'),
                         endDate: new Date('2024-08-11T18:30:00.000Z'),
@@ -156,6 +206,9 @@
                 },
                 onAppointmentFormOpening: (e) => {
                     e.cancel = true ;
+                },
+                onCellContextMenu: (e) => {
+                    e.event.preventDefault();
                 }
             }).dxScheduler('instance');
 
